@@ -6,7 +6,6 @@ function filterMovies(wordInMovieTitle) {
         }
     })
     addMoviesToDom(newArray)
-
 }
 
 function filterLatestMovies() {
@@ -17,14 +16,12 @@ function filterLatestMovies() {
         }
     })
     addMoviesToDom(newArray)
-
 }
 
 function createLink(imdbID) {
     const imdbLink = " https://www.imdb.com/title/" + imdbID
     return imdbLink
 }
-
 
 const addMoviesToDom = (newArray) => {
     const filmSelection = document.querySelector('#film-selection')
@@ -42,10 +39,6 @@ const addMoviesToDom = (newArray) => {
     }
     newArray.map(addLi)
 }
-
-
-
-
 
 const handleOnChangeEvent = (e) => {
     let movieType = e.target.value
@@ -68,9 +61,7 @@ const handleOnChangeEvent = (e) => {
         default:
             break;
     }
-
 }
-
 
 const addEventListeners = () => {
     const radioButtons = document.getElementsByName('filter')
