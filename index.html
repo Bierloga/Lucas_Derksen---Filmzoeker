@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+    <title>Filmzoeker Lucas Derksen</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welkom bij Luc's filmzoeker!</h1>
+    </header>
+    <nav>
+        <input class="radiobutton" type="radio" id="new-movies" name="filter" value="2014-or-newer"><label>2014 of
+            Nieuwer</label>
+        <input class="radiobutton" type="radio" id="avenger-films" name="filter" value="avenger-films"><label>Avenger
+            Films</label>
+        <input class="radiobutton" type="radio" id="x-men films" name="filter" value="x-men-films"><label>X-men
+            Films</label><br>
+        <input class="radiobutton" type="radio" id="princess films" name="filter"
+            value="princess-films"><label>Prinsessen Films</label>
+        <input class="radiobutton" type="radio" id="batman-films" name="filter" value="batman-films"><label>Batman
+            Films</label>
+    </nav>
+    <main>
+        <div>
+            <ul class="container" id="film-selection"></ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
